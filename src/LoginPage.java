@@ -197,7 +197,7 @@ public class LoginPage extends javax.swing.JFrame {
             String sql="SELECT * FROM RegInfo WHERE Email=?";   //Checks whether or not the email address exists in Database
             PreparedStatement pst=con.prepareStatement(sql);
             pst.setString(1,UserEmail);  
-            ResultSet rs=pst.executeQuery();  //
+            ResultSet rs=pst.executeQuery(); 
             if (rs.next()){  //If the email exists then execute
                 String Password=rs.getString("Password");
                 if(Pass.equalsIgnoreCase(Password)){  //If the password input exists on the databse then open the Stockworth program
