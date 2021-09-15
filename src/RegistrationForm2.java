@@ -234,6 +234,7 @@ public class RegistrationForm2 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnBackActionPerformed
 
     private void btnRegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegisterActionPerformed
+        //Declarations 
         String Name, Surname, Email,Number,Password, PassConfirm;
         Name=this.txtUsername.getText().trim(); 
         Surname=this.txtSurname.getText().trim();
