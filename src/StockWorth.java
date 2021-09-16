@@ -1,6 +1,5 @@
 
 import javax.swing.*;
-import java.math.*;
 import java.io.*;
 
 /*
@@ -14,6 +13,7 @@ import java.io.*;
  * @author Kamva Cewu
  */
 public class StockWorth extends javax.swing.JFrame {
+   // Declared up here since they are used in two different buttons
        double DebtR,CurrR,PE,GrowthR;
    
     public StockWorth() {
