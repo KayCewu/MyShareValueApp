@@ -397,7 +397,7 @@ public class StockWorth extends javax.swing.JFrame {
            this.txtRevG.setText(" "+GrowthR+" ,Bad");
        }
        
-       }catch(NumberFormatException e){
+       }catch(ArithmeticException e){
            JOptionPane.showMessageDialog(null,"Check input for validity","Error",JOptionPane.ERROR_MESSAGE);
            this.txtCAssets.setText("");
            this.txtCLiabilities.setText("");
