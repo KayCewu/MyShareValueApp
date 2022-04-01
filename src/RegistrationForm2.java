@@ -102,6 +102,11 @@ public class RegistrationForm2 extends javax.swing.JFrame {
         jLabel7.setText("Nationality:");
 
         cmbNationality.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "South African", "Zimbabwean", "Nigerian", "Ghanian", "Namibian", "Lesotho", "Botswana", "Other" }));
+        cmbNationality.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbNationalityActionPerformed(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel3.setText("Surname:");
@@ -275,7 +280,6 @@ public class RegistrationForm2 extends javax.swing.JFrame {
         } 
         //Following code connects to the database
         try{
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             String Connstr="jdbc:sqlserver://localhost;databaseName=Registration;integratedSecurity=true";
             Connection con=DriverManager.getConnection(Connstr); //Establishing a connection
             String Sql="INSERT into RegInfo(Name,Surname,Gender,Email,Password,Number) values (?,?,?,?,?,?)"; //
@@ -298,6 +302,10 @@ public class RegistrationForm2 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,e);
         }
     }//GEN-LAST:event_btnRegisterActionPerformed
+
+    private void cmbNationalityActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbNationalityActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbNationalityActionPerformed
 
     /**
      * @param args the command line arguments
