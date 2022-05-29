@@ -13,7 +13,7 @@ import java.io.*;
  * @author Kamva Cewu
  */
 public class StockWorth extends javax.swing.JFrame {
-   // Declared up here since they are used in two different buttons
+  //These variables are global variables.
        double DebtR,CurrR,PE,GrowthR;
    
     public StockWorth() {
