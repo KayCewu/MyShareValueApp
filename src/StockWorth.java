@@ -454,7 +454,7 @@ public class StockWorth extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLogOutActionPerformed
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
-        JFrame parentFrame=new JFrame();          //This opens a file chooser for the user
+        JFrame parentFrame=new JFrame();          //This opens a file chooser for the user.
         JFileChooser fileChooser= new JFileChooser();    //Creates an object named fileChooser
         fileChooser.setDialogTitle("Choose where to save file");   //Title of the file chooser
         int response=fileChooser.showSaveDialog(parentFrame);    //Takes response from user(Save or Cancel)
